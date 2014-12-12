@@ -79,6 +79,24 @@ namespace PissHotel.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to На 27 юли 2014 в с. Равногор се проведе Вторият международен самодеен празник.Организатор отново е Нина Грънчарова, която живее в Стокхолм, Швеция. В музикалния празник се изяви сборен хор &quot;Kuriosa&quot; /гости на хотел &quot;Борѝка&quot;/, с участието на певци от Швеция, Финландия, Норвегия и Туркмения, с ръководител Карин Бьорвалд и гост-диригент Мария Лешкова. Солистите изпълниха хорови песни на шведски език, както и народни песни на български език. Те показаха наученото от хореографа Михаил Динчев, като тропнаха бълга [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string FolkloreBody {
+            get {
+                return ResourceManager.GetString("FolkloreBody", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;Международен самодеен празник&quot;.
+        /// </summary>
+        public static string FolkloreHeader {
+            get {
+                return ResourceManager.GetString("FolkloreHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Галерия.
         /// </summary>
         public static string Gallery {
@@ -106,6 +124,24 @@ namespace PissHotel.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Основна отглеждана култура в Равногор и поминък за населението са картофите. От стари времена селото е познато като център на еко-производството на картофи за Южна България. За това е допринесло и съществуващото преди 1990 год. едно от най-големите в страната семепроизводни стопанства. В момента селото е известно в цяла България с произведените тук екологично чисти картофи. Затова от 2005 год. се провежда ежегодно в последната събота на месец октомври и единственият по рода си &quot;Празник на картофа&quot;. Организи [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string PotatoBody {
+            get {
+                return ResourceManager.GetString("PotatoBody", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;Фестивал на картофа&quot;.
+        /// </summary>
+        public static string PotatoHeader {
+            get {
+                return ResourceManager.GetString("PotatoHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Резервации.
         /// </summary>
         public static string Reservations {
@@ -124,11 +160,92 @@ namespace PissHotel.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to на едноименния връх е изграден параклис, в който на празника се прави курбан, като населението и гостите отиват там на поклонение и разходка. Организира се на църковният празник - „Св. Елена и Константин”..
+        /// </summary>
+        public static string StElenaBody {
+            get {
+                return ResourceManager.GetString("StElenaBody", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to „Св. Елена и Константин”.
+        /// </summary>
+        public static string StElenaHeader {
+            get {
+                return ResourceManager.GetString("StElenaHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to отпразнува се на 20 юли или съботата преди него със събор край параклиса „Св. Илия”. Там е съществувал средновековен манастир, който по времето на турското робство е бил действащ. При помохамеданчването на Родопите обителта е била опожарена, монасите – избити, а още 230 църкви в този дял на планината - унищожени. Манастирът е възстановен през 1908 г. В момента в него се извършват богослужения целогодишно, но най-вече на празника Илинден, когато пристигат хиляди жители и гости за поклонение. На самия връх се [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string StIlijaBody {
+            get {
+                return ResourceManager.GetString("StIlijaBody", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Гайдарско надсвирване &quot;Илинден - Равногор&quot;.
+        /// </summary>
+        public static string StIlijaHeader {
+            get {
+                return ResourceManager.GetString("StIlijaHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to се провежда всяка година в последната събота на месец юни. Празненствата са изпълнени с разнообразна фолклорна програма и на центъра се извива кръшно хоро. Гости на празника са членове на Общинският съвет, висши представители от църквата и видни държавници, а туристите могат да се насладят на Родопското празненство и традиции..
+        /// </summary>
+        public static string StPeterBody {
+            get {
+                return ResourceManager.GetString("StPeterBody", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Празникът на село Равногор (Петровден).
+        /// </summary>
+        public static string StPeterHeader {
+            get {
+                return ResourceManager.GetString("StPeterHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Традиции.
         /// </summary>
         public static string Traditions {
             get {
                 return ResourceManager.GetString("Traditions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Гостите на селото могат да вземат участие в редица местни обичаи, по-важните от които са:.
+        /// </summary>
+        public static string TraditionsGeneral {
+            get {
+                return ResourceManager.GetString("TraditionsGeneral", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to последният петък от последната седмица на юли - Въпреки че днес вече няма задължителна военна служба, равногорци все още спазват една традиция, която прави селото уникално. Ритуалът съществува поне от около 100 години и е свързан с войнишкото изпращане. Всички момчета, навършили 18 години, с еднакво облекло, закичени с цвете и кърпа, излизат на площада пред цялото село. Те целуват знамето на набора и националния флаг, полагат клетва пред род и отечество, да служат на майка България. Празникът се чества три  [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string YouthBody {
+            get {
+                return ResourceManager.GetString("YouthBody", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Младежки празник (&quot;Набора&quot;).
+        /// </summary>
+        public static string YouthHeader {
+            get {
+                return ResourceManager.GetString("YouthHeader", resourceCulture);
             }
         }
     }

@@ -123,6 +123,12 @@
   <data name="Contact" xml:space="preserve">
     <value>Contact</value>
   </data>
+  <data name="FolkloreBody" xml:space="preserve">
+    <value>On July 27th, 2014 in Ravnogor was held the Second International Amateur Folklore Festival. It was organised again by Nina Gruncharova, who lives in Stockholm, Sweden. A composite choir "Kuriosa" /guests of the hotel "Boryka"/ participated in the festival featuring singers from Sweden, Finland, Norway and Turkmenistan. The choir is headed by Karin Bjurvald and had Maria Leshkova as a guest-conductor. The soloists performed choral works in Swedish and folklore songs in Bulgarian. They presented typic Bulgarian dances taught by the freelance composer and musician Michail Dinchev. Georg Schubert from Hungary proved his mastery of the bagpipe. In the celebration actively took part the "Folklore Group at the National Cultural Center April 23th, 1876" and the church choir of Ravnogor, the Cultural Centers of Skutare and Rozovo, as well as bagpipers and singers from the towns of Peshtera and Bratsigovo</value>
+  </data>
+  <data name="FolkloreHeader" xml:space="preserve">
+    <value>"International amateur folklore festival"</value>
+  </data>
   <data name="Gallery" xml:space="preserve">
     <value>Gallery</value>
   </data>
@@ -132,13 +138,46 @@
   <data name="Home" xml:space="preserve">
     <value>Home</value>
   </data>
+  <data name="PotatoBody" xml:space="preserve">
+    <value>Potatoes are the main cultivation in Ravnogor and means of living for the inhabitants. From old times the village is recognized as a centre of eco-production of potatoes for southern Bulgaria. The seed-producing farm which existed here until 1990 and was one of the biggest in Bulgaria has contributed for the good reputation of the local production. At the present moment the village is well-known throughout the country with the ecologically pure potatoes produced here. The celebration exists scarcely from the autumn of 2005 but from now on it will carry out through the last Friday of October. It consists of presentation of potatoes, specific dishes and decoration of them. For the best performed in the categories people there are rewards, too.</value>
+  </data>
+  <data name="PotatoHeader" xml:space="preserve">
+    <value>"Festival of the Potato"</value>
+  </data>
   <data name="Reservations" xml:space="preserve">
     <value>Reservations</value>
   </data>
   <data name="Rooms" xml:space="preserve">
     <value>Rooms</value>
   </data>
+  <data name="StElenaBody" xml:space="preserve">
+    <value>at the peak of the same name is set up a chapel where a boiled mutton is cooked. The inhabitants of the village and the guests go there to express their homage or just to go for a walk. It is carried out through the church celebration ‘St. Elena and Konstantin’.</value>
+  </data>
+  <data name="StElenaHeader" xml:space="preserve">
+    <value>"St. Constantine and Elena"</value>
+  </data>
+  <data name="StIlijaBody" xml:space="preserve">
+    <value>people celebrate it on the 20th of July or the Saturday before it. The fair takes place alongside of the ‘St. Ilija’ chapel. Everyone lies on the meadow round the chapel and enjoys the Rhodope music and traditions. At this celebration there are a lot of family meetings, a boiled mutton is cooked, people dance traditional folk dances. Since 2014 the festival has evolved into a Bagpipe Contest Ilinden - Ravnogor with participants from all over Bulgaria.</value>
+  </data>
+  <data name="StIlijaHeader" xml:space="preserve">
+    <value>Bagpipe Contest "Ilinden - Ravnogor"</value>
+  </data>
+  <data name="StPeterBody" xml:space="preserve">
+    <value>takes place every year on the last Friday of June. The celebration continues for three days – until Sunday and it is filled with various folklore programme and a lively horo/Bulgarian folk dance/ is curving. Guests of the celebration are members of the municipal council, supreme representatives of church and prominent statesmen. The tourists have the opportunity to enjoy the Rhodope traditions and celebration.</value>
+  </data>
+  <data name="StPeterHeader" xml:space="preserve">
+    <value>The holiday of village Ravnogor (Peter)</value>
+  </data>
   <data name="Traditions" xml:space="preserve">
     <value>Traditions</value>
+  </data>
+  <data name="TraditionsGeneral" xml:space="preserve">
+    <value>The tourists in the village can take part in a series of local customs, more important of which are:</value>
+  </data>
+  <data name="YouthBody" xml:space="preserve">
+    <value>takes place on the last Friday of July – It’s a natural continuation of the Soldier’s celebration, when the levis were sent to barrack. The girls and the boys are preparing for a long time for the celebration which lasts for three days and three nights. You can hardly see anywhere else so many youngsters who dance folk dances for 6 – 7 hours uninterruptedly on the square.</value>
+  </data>
+  <data name="YouthHeader" xml:space="preserve">
+    <value>Youth Day ("Nabora")</value>
   </data>
 </root>
