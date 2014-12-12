@@ -1,0 +1,20 @@
+﻿@using PissHotel.Localization
+
+@{
+    string otherLangage = String.Empty;
+    string otherLangageLink = String.Empty;
+    if (SystemLocalization.GetCurrentLanguage() == LocalizationLanguage.bg)
+    {
+        otherLangage = "EN";
+        otherLangageLink = LocalizationLanguage.en.ToString();
+    }
+    else if (SystemLocalization.GetCurrentLanguage() == LocalizationLanguage.en)
+    {
+        otherLangage = "BG";
+        otherLangageLink = LocalizationLanguage.bg.ToString();
+    }
+}
+
+<ul class="nav navbar-nav navbar-right">
+    <li><a href="@Html.LocalizationUrl(otherLangageLink)">@otherLangage</a></li>
+</ul>

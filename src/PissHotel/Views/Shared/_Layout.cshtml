@@ -31,6 +31,7 @@
                     <li class="@(action.Equals(MVC.Home.ActionNames.Holidays) ? "active" : "")">@Html.ActionLink(Global.Holidays, MVC.Home.ActionNames.Holidays, MVC.Home.Name)</li>
                     <li class="@(action.Equals(MVC.Home.ActionNames.Reservations) ? "active" : "")">@Html.ActionLink(Global.Reservations, MVC.Home.ActionNames.Reservations, MVC.Home.Name)</li>
                 </ul>
+                @Html.Partial(MVC.Shared.Views._LanguageSelection)
             </div>
         </div>
     </div>
