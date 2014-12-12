@@ -14,6 +14,13 @@ namespace PissHotel
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Localization", // Route name
+                url: "{lang}/{controller}/{action}/{id}", // URL with parameters
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }, // Parameter defaults
+                constraints: new { lang = "^bg$|^en$" }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
