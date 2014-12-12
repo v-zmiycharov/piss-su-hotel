@@ -117,7 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Test" xml:space="preserve">
-    <value>Test BG</value>
+  <data name="ApplicationName" xml:space="preserve">
+    <value>Хотел Борѝка</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Контакти</value>
+  </data>
+  <data name="Gallery" xml:space="preserve">
+    <value>Галерия</value>
+  </data>
+  <data name="Holidays" xml:space="preserve">
+    <value>Празници</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Начало</value>
+  </data>
+  <data name="Reservations" xml:space="preserve">
+    <value>Резервации</value>
+  </data>
+  <data name="Rooms" xml:space="preserve">
+    <value>Стаи</value>
+  </data>
+  <data name="Traditions" xml:space="preserve">
+    <value>Традиции</value>
   </data>
 </root>

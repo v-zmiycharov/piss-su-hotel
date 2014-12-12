@@ -9,7 +9,7 @@ using System.Web.Mvc;
 
 namespace PissHotel.Controllers
 {
-    public class BaseController : Controller
+    public partial class BaseController : Controller
     {
         public BaseController()
         {

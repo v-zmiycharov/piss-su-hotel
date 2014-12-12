@@ -3,12 +3,15 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - @Global.ApplicationName</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
+    @{
+        string action = ViewContext.RouteData.Values["action"].ToString();
+    }
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -17,15 +20,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink(Global.ApplicationName, MVC.Home.ActionNames.Index, MVC.Home.Name, new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li class="@(action.Equals(MVC.Home.ActionNames.Rooms) ? "active" : "")">@Html.ActionLink(Global.Rooms, MVC.Home.ActionNames.Rooms, MVC.Home.Name)</li>
+                    <li class="@(action.Equals(MVC.Home.ActionNames.Contact) ? "active" : "")">@Html.ActionLink(Global.Contact, MVC.Home.ActionNames.Contact, MVC.Home.Name)</li>
+                    <li class="@(action.Equals(MVC.Home.ActionNames.Gallery) ? "active" : "")">@Html.ActionLink(Global.Gallery, MVC.Home.ActionNames.Gallery, MVC.Home.Name)</li>
+                    <li class="@(action.Equals(MVC.Home.ActionNames.Traditions) ? "active" : "")">@Html.ActionLink(Global.Traditions, MVC.Home.ActionNames.Traditions, MVC.Home.Name)</li>
+                    <li class="@(action.Equals(MVC.Home.ActionNames.Holidays) ? "active" : "")">@Html.ActionLink(Global.Holidays, MVC.Home.ActionNames.Holidays, MVC.Home.Name)</li>
+                    <li class="@(action.Equals(MVC.Home.ActionNames.Reservations) ? "active" : "")">@Html.ActionLink(Global.Reservations, MVC.Home.ActionNames.Reservations, MVC.Home.Name)</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
@@ -33,7 +38,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - @Global.ApplicationName</p>
         </footer>
     </div>
 
