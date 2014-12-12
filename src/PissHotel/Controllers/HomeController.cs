@@ -6,24 +6,40 @@ using System.Web.Mvc;
 
 namespace PissHotel.Controllers
 {
-    public class HomeController : BaseController
+    public partial class HomeController : BaseController
     {
-        public ActionResult Index()
+        public virtual ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult About()
+        public virtual ActionResult Rooms()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        public virtual ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            return View();
+        }
 
+        public virtual ActionResult Gallery()
+        {
+            return View();
+        }
+
+        public virtual ActionResult Traditions()
+        {
+            return View();
+        }
+
+        public virtual ActionResult Holidays()
+        {
+            return View();
+        }
+
+        public virtual ActionResult Reservations()
+        {
             return View();
         }
     }
