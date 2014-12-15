@@ -79,6 +79,20 @@ namespace PissHotel.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 4582 с. Равногор,&lt;br/&gt;
+        ///Община Брацигово, Област Пазарджик,&lt;br/&gt;
+        ///ул. „Втора” №35&lt;br/&gt;
+        ///тел.: + 359(0)34/442 622,&lt;br/&gt;
+        ///Мобилен тел.: 0888 261 346;&lt;br/&gt;
+        ///e-mail:boryka@abv.bg.
+        /// </summary>
+        public static string ContactMain {
+            get {
+                return ResourceManager.GetString("ContactMain", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to На 27 юли 2014 в с. Равногор се проведе Вторият международен самодеен празник.Организатор отново е Нина Грънчарова, която живее в Стокхолм, Швеция. В музикалния празник се изяви сборен хор &quot;Kuriosa&quot; /гости на хотел &quot;Борѝка&quot;/, с участието на певци от Швеция, Финландия, Норвегия и Туркмения, с ръководител Карин Бьорвалд и гост-диригент Мария Лешкова. Солистите изпълниха хорови песни на шведски език, както и народни песни на български език. Те показаха наученото от хореографа Михаил Динчев, като тропнаха бълга [rest of string was truncated]&quot;;.
         /// </summary>
         public static string FolkloreBody {
@@ -97,11 +111,29 @@ namespace PissHotel.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to За резервации:.
+        /// </summary>
+        public static string ForReservations {
+            get {
+                return ResourceManager.GetString("ForReservations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Галерия.
         /// </summary>
         public static string Gallery {
             get {
                 return ResourceManager.GetString("Gallery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Тук.
+        /// </summary>
+        public static string Here {
+            get {
+                return ResourceManager.GetString("Here", resourceCulture);
             }
         }
         

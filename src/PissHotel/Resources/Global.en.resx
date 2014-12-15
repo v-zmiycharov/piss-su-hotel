@@ -123,14 +123,28 @@
   <data name="Contact" xml:space="preserve">
     <value>Contact</value>
   </data>
+  <data name="ContactMain" xml:space="preserve">
+    <value>4582 Ravnogor village,&lt;br/&gt;
+municipality Bratzigovo, district Pazardzhik,&lt;br/&gt;
+‘Vtora’ Street №35&lt;br/&gt;
+Phone number: +359(0)34/442 622&lt;br/&gt;
+Mobile:+359 888 261 346;&lt;br/&gt;
+e-mail: boryka@abv.bg</value>
+  </data>
   <data name="FolkloreBody" xml:space="preserve">
     <value>On July 27th, 2014 in Ravnogor was held the Second International Amateur Folklore Festival. It was organised again by Nina Gruncharova, who lives in Stockholm, Sweden. A composite choir "Kuriosa" /guests of the hotel "Boryka"/ participated in the festival featuring singers from Sweden, Finland, Norway and Turkmenistan. The choir is headed by Karin Bjurvald and had Maria Leshkova as a guest-conductor. The soloists performed choral works in Swedish and folklore songs in Bulgarian. They presented typic Bulgarian dances taught by the freelance composer and musician Michail Dinchev. Georg Schubert from Hungary proved his mastery of the bagpipe. In the celebration actively took part the "Folklore Group at the National Cultural Center April 23th, 1876" and the church choir of Ravnogor, the Cultural Centers of Skutare and Rozovo, as well as bagpipers and singers from the towns of Peshtera and Bratsigovo</value>
   </data>
   <data name="FolkloreHeader" xml:space="preserve">
     <value>"International amateur folklore festival"</value>
   </data>
+  <data name="ForReservations" xml:space="preserve">
+    <value>For reservations:</value>
+  </data>
   <data name="Gallery" xml:space="preserve">
     <value>Gallery</value>
+  </data>
+  <data name="Here" xml:space="preserve">
+    <value>Here</value>
   </data>
   <data name="Holidays" xml:space="preserve">
     <value>Holidays</value>

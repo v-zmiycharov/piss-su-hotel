@@ -1,17 +1,19 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = Global.Contact;
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-xs-6 text-right">
+            <p><b>@Global.Contact:</b></p>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+            <p style="font-size: 16px;"><b>@Html.Raw(Global.ContactMain)</b></p>
+
+            <p style="font-size: 16px;"><b>@Global.ForReservations @Html.ActionLink(Global.Here, MVC.Home.ActionNames.Reservations, MVC.Home.Name)</b></p>
+        </div>
+
+        <div class="col-xs-6">
+            <img src="@Links.Content.img.contact_jpg" />
+        </div>
+    </div>
+</div>
