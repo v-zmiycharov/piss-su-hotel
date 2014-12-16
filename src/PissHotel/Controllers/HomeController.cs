@@ -28,7 +28,7 @@ namespace PissHotel.Controllers
             return View();
         }
 
-        public virtual ActionResult Traditions()
+        public virtual ActionResult Locality()
         {
             return View();
         }

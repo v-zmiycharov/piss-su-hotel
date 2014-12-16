@@ -152,6 +152,9 @@ e-mail: boryka@abv.bg</value>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
   </data>
+  <data name="Locality" xml:space="preserve">
+    <value>Местността</value>
+  </data>
   <data name="PotatoBody" xml:space="preserve">
     <value>Potatoes are the main cultivation in Ravnogor and means of living for the inhabitants. From old times the village is recognized as a centre of eco-production of potatoes for southern Bulgaria. The seed-producing farm which existed here until 1990 and was one of the biggest in Bulgaria has contributed for the good reputation of the local production. At the present moment the village is well-known throughout the country with the ecologically pure potatoes produced here. The celebration exists scarcely from the autumn of 2005 but from now on it will carry out through the last Friday of October. It consists of presentation of potatoes, specific dishes and decoration of them. For the best performed in the categories people there are rewards, too.</value>
   </data>
@@ -181,9 +184,6 @@ e-mail: boryka@abv.bg</value>
   </data>
   <data name="StPeterHeader" xml:space="preserve">
     <value>The holiday of village Ravnogor (Peter)</value>
-  </data>
-  <data name="Traditions" xml:space="preserve">
-    <value>Traditions</value>
   </data>
   <data name="TraditionsGeneral" xml:space="preserve">
     <value>The tourists in the village can take part in a series of local customs, more important of which are:</value>

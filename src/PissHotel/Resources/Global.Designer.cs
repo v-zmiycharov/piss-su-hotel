@@ -156,6 +156,15 @@ namespace PissHotel.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Местността.
+        /// </summary>
+        public static string Locality {
+            get {
+                return ResourceManager.GetString("Locality", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Основна отглеждана култура в Равногор и поминък за населението са картофите. От стари времена селото е познато като център на еко-производството на картофи за Южна България. За това е допринесло и съществуващото преди 1990 год. едно от най-големите в страната семепроизводни стопанства. В момента селото е известно в цяла България с произведените тук екологично чисти картофи. Затова от 2005 год. се провежда ежегодно в последната събота на месец октомври и единственият по рода си &quot;Празник на картофа&quot;. Организи [rest of string was truncated]&quot;;.
         /// </summary>
         public static string PotatoBody {
@@ -242,15 +251,6 @@ namespace PissHotel.Resources {
         public static string StPeterHeader {
             get {
                 return ResourceManager.GetString("StPeterHeader", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Традиции.
-        /// </summary>
-        public static string Traditions {
-            get {
-                return ResourceManager.GetString("Traditions", resourceCulture);
             }
         }
         

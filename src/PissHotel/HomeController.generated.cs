@@ -77,7 +77,7 @@ namespace PissHotel.Controllers
             public readonly string Rooms = "Rooms";
             public readonly string Contact = "Contact";
             public readonly string Gallery = "Gallery";
-            public readonly string Traditions = "Traditions";
+            public readonly string Locality = "Locality";
             public readonly string Holidays = "Holidays";
             public readonly string Reservations = "Reservations";
         }
@@ -89,7 +89,7 @@ namespace PissHotel.Controllers
             public const string Rooms = "Rooms";
             public const string Contact = "Contact";
             public const string Gallery = "Gallery";
-            public const string Traditions = "Traditions";
+            public const string Locality = "Locality";
             public const string Holidays = "Holidays";
             public const string Reservations = "Reservations";
         }
@@ -109,17 +109,17 @@ namespace PissHotel.Controllers
                 public readonly string Gallery = "Gallery";
                 public readonly string Holidays = "Holidays";
                 public readonly string Index = "Index";
+                public readonly string Locality = "Locality";
                 public readonly string Reservations = "Reservations";
                 public readonly string Rooms = "Rooms";
-                public readonly string Traditions = "Traditions";
             }
             public readonly string Contact = "~/Views/Home/Contact.cshtml";
             public readonly string Gallery = "~/Views/Home/Gallery.cshtml";
             public readonly string Holidays = "~/Views/Home/Holidays.cshtml";
             public readonly string Index = "~/Views/Home/Index.cshtml";
+            public readonly string Locality = "~/Views/Home/Locality.cshtml";
             public readonly string Reservations = "~/Views/Home/Reservations.cshtml";
             public readonly string Rooms = "~/Views/Home/Rooms.cshtml";
-            public readonly string Traditions = "~/Views/Home/Traditions.cshtml";
         }
     }
 
@@ -173,13 +173,13 @@ namespace PissHotel.Controllers
         }
 
         [NonAction]
-        partial void TraditionsOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+        partial void LocalityOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult Traditions()
+        public override System.Web.Mvc.ActionResult Locality()
         {
-            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Traditions);
-            TraditionsOverride(callInfo);
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Locality);
+            LocalityOverride(callInfo);
             return callInfo;
         }
 
