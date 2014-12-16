@@ -103,6 +103,9 @@ namespace Links
             public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
             public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
             public static readonly string contact_jpg = Url("contact.jpg");
+            public static readonly string ravn1_jpg = Url("ravn1.jpg");
+            public static readonly string ravn2_jpg = Url("ravn2.jpg");
+            public static readonly string ravn3_jpg = Url("ravn3.jpg");
             public static readonly string tra1_jpg = Url("tra1.jpg");
             public static readonly string tra10_jpg = Url("tra10.jpg");
             public static readonly string tra11_jpg = Url("tra11.jpg");

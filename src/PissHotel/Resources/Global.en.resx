@@ -153,7 +153,16 @@ e-mail: boryka@abv.bg</value>
     <value>Home</value>
   </data>
   <data name="Locality" xml:space="preserve">
-    <value>Местността</value>
+    <value>Locality</value>
+  </data>
+  <data name="LocalityP1" xml:space="preserve">
+    <value>The village of Ravnogor is located at 1350 metres above sea level in the area of Batak in the north-western Rhodope Mauntains. The peak Sveta Nedelia soars just above it. Climbing up its steep slopes, you can see the magnificent view that reveals. In the west, you can clearly see the village and the entire Ravnogorian plateau with its potato fields and forests. In the north there is the Trakia lowland and in the east and south stretch the Rhodopes. The deeply dug valley of river Vucha is clearly outlined and beyond it there is the mountain of Chernatitza with its peaks Modur and Persenk. The village was established upon the lands of the ancient Thracians, proof of which are the mounds, located in its territory. Its first name dates back from the time of the Ottoman slavery – the village was called Koria (meaning literally ‘forest’) and it gets its name with the acknowledgment of the village as an administrative unit in the Turkish empire in 1777. For the sake of the fact that the Turks did not manage to convert the then inhabitants to Mohammedanism, they called them ‘aksis’ (meaning ‘bad people’), and the village – Aksi Koria.</value>
+  </data>
+  <data name="LocalityP2" xml:space="preserve">
+    <value>After the liberation of Bulgaria with a decision of the municipal council the name of the village is changed to Iasu Koria (meaning ‘flat forest’). It was kept till 1934 when by a government decree it is replaced with the current name – Ravnogor (which is the Bulgarian equivalent of ‘flat forest’). At that time the main means of living were field farming and stock-breeding. Oats, rye, peas, vetch, beans, maize, lentil and potatoes were cultivated. Among the animals the biggest importance had goats, horses and cows.</value>
+  </data>
+  <data name="LocalityP3" xml:space="preserve">
+    <value>The territory of the village is 92 000 decars. Its frontiers are in the north-east – the lands of the village of Zhrebichko, in the east – the banks of river Vucha, in the south – the lands of the village of Fotinovo, in the south-west – the lands of the village of Nova Mahala, in the south-west – the lands of Rozovo village and the town of Bratzigovo.</value>
   </data>
   <data name="PotatoBody" xml:space="preserve">
     <value>Potatoes are the main cultivation in Ravnogor and means of living for the inhabitants. From old times the village is recognized as a centre of eco-production of potatoes for southern Bulgaria. The seed-producing farm which existed here until 1990 and was one of the biggest in Bulgaria has contributed for the good reputation of the local production. At the present moment the village is well-known throughout the country with the ecologically pure potatoes produced here. The celebration exists scarcely from the autumn of 2005 but from now on it will carry out through the last Friday of October. It consists of presentation of potatoes, specific dishes and decoration of them. For the best performed in the categories people there are rewards, too.</value>
