@@ -152,6 +152,9 @@ e-mail: boryka@abv.bg</value>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
   </data>
+  <data name="LearnMore" xml:space="preserve">
+    <value>Learn more</value>
+  </data>
   <data name="Locality" xml:space="preserve">
     <value>Locality</value>
   </data>
@@ -173,8 +176,14 @@ e-mail: boryka@abv.bg</value>
   <data name="Reservations" xml:space="preserve">
     <value>Reservations</value>
   </data>
+  <data name="ReservationsShort" xml:space="preserve">
+    <value>Take advantage of our offers and make your reservation now!</value>
+  </data>
   <data name="Rooms" xml:space="preserve">
     <value>Rooms</value>
+  </data>
+  <data name="RoomsShort" xml:space="preserve">
+    <value>We offer several types of rooms, including Double, Loft and Apartment. Space and comfort they provide can satisfy all needs and low prices contribute to your comfort.</value>
   </data>
   <data name="StElenaBody" xml:space="preserve">
     <value>at the peak of the same name is set up a chapel where a boiled mutton is cooked. The inhabitants of the village and the guests go there to express their homage or just to go for a walk. It is carried out through the church celebration ‘St. Elena and Konstantin’.</value>

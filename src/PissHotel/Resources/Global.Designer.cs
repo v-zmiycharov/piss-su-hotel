@@ -156,6 +156,15 @@ namespace PissHotel.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Вижте още.
+        /// </summary>
+        public static string LearnMore {
+            get {
+                return ResourceManager.GetString("LearnMore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Местността.
         /// </summary>
         public static string Locality {
@@ -219,11 +228,29 @@ namespace PissHotel.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Възползвайте се от нашите предложения и направете резервацията си още сега!.
+        /// </summary>
+        public static string ReservationsShort {
+            get {
+                return ResourceManager.GetString("ReservationsShort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Стаи.
         /// </summary>
         public static string Rooms {
             get {
                 return ResourceManager.GetString("Rooms", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Предлагаме няколко вида стаи, сред които Двойна, Мансардна и Апартамент. Пространството и комфортът, който те предоставят могат да удовлетворят всякакви нужди, а ниските цени допринасят за вашия уют..
+        /// </summary>
+        public static string RoomsShort {
+            get {
+                return ResourceManager.GetString("RoomsShort", resourceCulture);
             }
         }
         
