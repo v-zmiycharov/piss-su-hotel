@@ -1,7 +1,22 @@
-﻿@{
-    ViewBag.Title = "About";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+﻿@model List<PissHotel.Models.Album>
 
-<p>Use this area to provide additional information.</p>
+@{
+    ViewBag.Title = Global.Gallery;
+}
+
+<div class="jumbotron">
+    @if (Model != null)
+    {
+        foreach (var album in Model)
+        {
+            <h3>@album.Title</h3>
+            <p class="text-center">
+                @foreach (var pic in album.Pictures)
+                {
+                    string src = Constants.AlbumsImagesDir + album.AlbumId + "/" + pic;
+                    <a href="@src" style="background-image: url(@src);" class="gallery-link" data-lightbox="gallery_@(album.AlbumId)"></a>
+                }
+            </p>
+        }
+    }
+</div>
