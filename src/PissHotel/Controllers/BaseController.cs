@@ -1,4 +1,5 @@
 ﻿using PissHotel.Localization;
+using PissHotel.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -15,7 +16,7 @@ namespace PissHotel.Controllers
         {
         }
 
-        // protected UnitOfWork unitOfWork = new UnitOfWork();
+        protected UnitOfWork unitOfWork = new UnitOfWork();
 
         protected override void ExecuteCore()
         {
