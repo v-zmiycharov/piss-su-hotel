@@ -219,6 +219,8 @@
     <Compile Include="Models\webpages_Roles.cs">
       <DependentUpon>PissHotel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Partials\Room.cs" />
+    <Compile Include="Partials\Album.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Global.Designer.cs">
       <AutoGen>True</AutoGen>
