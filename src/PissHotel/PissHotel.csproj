@@ -43,6 +43,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -185,8 +187,38 @@
       <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Album.cs">
+      <DependentUpon>PissHotel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\PissHotel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PissHotel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PissHotel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PissHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PissHotel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PissHotel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Room.cs">
+      <DependentUpon>PissHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>PissHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\webpages_Membership.cs">
+      <DependentUpon>PissHotel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\webpages_Roles.cs">
+      <DependentUpon>PissHotel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Global.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -239,6 +271,23 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="Models\PissHotel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PissHotel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\PissHotel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PissHotel.edmx</DependentUpon>
+      <LastGenOutput>PissHotel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\PissHotel.edmx.diagram">
+      <DependentUpon>PissHotel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\PissHotel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PissHotel.edmx</DependentUpon>
+      <LastGenOutput>PissHotel.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
