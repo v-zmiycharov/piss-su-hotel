@@ -7,12 +7,10 @@
         foreach (var room in Model)
         {
             <h3>
-                @room.Title - @room.Price лв. 
-                (
+                @room.TitleBG - @room.Price лв. 
                 @Html.ActionLink("Редакция", MVC.Admin.Room.ActionNames.Edit, MVC.Admin.Room.Name, new { area = MVC.Admin.Name, id = room.RoomId }, null)
                 |                
                 @Html.ActionLink("Изтрий", MVC.Admin.Room.ActionNames.Delete, MVC.Admin.Room.Name, new { area = MVC.Admin.Name, id = room.RoomId }, new { @class = "delete-link" })
-                )
             </h3>
         }
     }

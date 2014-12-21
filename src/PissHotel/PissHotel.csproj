@@ -316,6 +316,7 @@
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Admin\Views\Room\List.cshtml" />
     <Content Include="Areas\Admin\Views\Room\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Room\Edit.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

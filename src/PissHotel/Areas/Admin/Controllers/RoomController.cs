@@ -78,7 +78,7 @@ namespace PissHotel.Areas.Admin.Controllers
             vm.TitleBG = room.TitleBG;
             vm.TitleEN = room.TitleEN;
             vm.Price = room.Price;
-            vm.Pictures = room.Pictures;
+            vm.Pictures = Directory.GetFiles(Server.MapPath(Constants.RoomsImagesDir + vm.RoomId + "/")).Select(Path.GetFileName).ToList();
 
             return View(vm);
         }
@@ -88,6 +88,7 @@ namespace PissHotel.Areas.Admin.Controllers
         {
             if (!ModelState.IsValid)
             {
+                vm.Pictures = Directory.GetFiles(Server.MapPath(Constants.RoomsImagesDir + vm.RoomId + "/")).Select(Path.GetFileName).ToList();
                 return View(vm);
             }
 
@@ -133,24 +134,18 @@ namespace PissHotel.Areas.Admin.Controllers
 
             bool isInvalidImage = file == null || file.ContentLength == 0 || String.IsNullOrWhiteSpace(file.ContentType) || !file.ContentType.StartsWith("image/");
             if (isInvalidImage)
-                ModelState.AddModelError("file", "Please upload a photo.");
+                return RedirectToAction(ActionNames.Edit, new { id = roomId });
 
-            if (!ModelState.IsValid)
-                return RedirectToAction(ActionNames.List);
+            string fileName = file.FileName;
+            string path = Path.Combine(folder, fileName);
 
-            if (!isInvalidImage)
+            while (System.IO.File.Exists(path))
             {
-                string fileName = file.FileName;
-                string path = Path.Combine(folder, fileName);
-
-                while (System.IO.File.Exists(path))
-                {
-                    fileName = "_" + fileName;
-                    path = Path.Combine(folder, fileName);
-                }
-
-                file.SaveAs(path);
+                fileName = "_" + fileName;
+                path = Path.Combine(folder, fileName);
             }
+
+            file.SaveAs(path);
 
             return RedirectToAction(ActionNames.Edit, new { id = roomId });
         }
