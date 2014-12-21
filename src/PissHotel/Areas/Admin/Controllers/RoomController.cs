@@ -27,6 +27,7 @@ namespace PissHotel.Areas.Admin.Controllers
             {
                 Directory.Delete(Server.MapPath(Constants.RoomsImagesDir + room.RoomId + "/"), true);
                 unitOfWork.RoomRepository.Delete(room);
+                unitOfWork.Save();
             }
 
             return RedirectToAction(ActionNames.List);
