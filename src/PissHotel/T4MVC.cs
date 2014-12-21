@@ -43,6 +43,7 @@ namespace T4MVC
         public PissHotel.Areas.Admin.Controllers.AlbumController Album = new PissHotel.Areas.Admin.Controllers.T4MVC_AlbumController();
         public PissHotel.Areas.Admin.Controllers.ReservationController Reservation = new PissHotel.Areas.Admin.Controllers.T4MVC_ReservationController();
         public PissHotel.Areas.Admin.Controllers.RoomController Room = new PissHotel.Areas.Admin.Controllers.T4MVC_RoomController();
+        public PissHotel.Areas.Admin.Controllers.SearchController Search = new PissHotel.Areas.Admin.Controllers.T4MVC_SearchController();
         public T4MVC.Admin.SharedController Shared = new T4MVC.Admin.SharedController();
     }
 }

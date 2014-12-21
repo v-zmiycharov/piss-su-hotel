@@ -1,0 +1,56 @@
+﻿@model PissHotel.Areas.Admin.Models.SearchVM
+
+<form class="form-horizontal" role="form" method="post">
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        <label class="col-md-4 control-label">@Html.LabelFor(m => m.Location)</label>
+        <div class="col-md-8">
+            @Html.DropDownListFor(m => m.Location, Model.LocationItems, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-4 control-label">@Html.LabelFor(m => m.Stars)</label>
+        <div class="col-md-2">
+            @Html.DropDownListFor(m => m.Stars, Model.StarsItems, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-4 control-label">@Html.LabelFor(m => m.Order)</label>
+        <div class="col-md-8">
+            @Html.DropDownListFor(m => m.Order, Model.OrderItems, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Търси</button>
+        </div>
+    </div>
+    @Html.ValidationSummary()
+</form>
+
+@if (Model.Results != null && Model.Results.Count > 0)
+{
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Име</th>
+                <th>Местоположение</th>
+                <th>Звезди</th>
+                <th>Цени</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Results.Count; i++)
+            {
+                <tr>
+                    <td>@(i + 1)</td>
+                    <td>@Model.Results[i].Name</td>
+                    <td>@Model.Results[i].Location</td>
+                    <td>@Model.Results[i].Stars</td>
+                    <td>@Model.Results[i].Price</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
