@@ -25,10 +25,9 @@ using T4MVC;
 [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
 public static partial class MVC
 {
-    public static PissHotel.Controllers.AccountController Account = new PissHotel.Controllers.T4MVC_AccountController();
     public static PissHotel.Controllers.BaseController Base = new PissHotel.Controllers.T4MVC_BaseController();
     public static PissHotel.Controllers.HomeController Home = new PissHotel.Controllers.T4MVC_HomeController();
-    public static PissHotel.Controllers.ManageController Manage = new PissHotel.Controllers.T4MVC_ManageController();
+    public static T4MVC.ManageController Manage = new T4MVC.ManageController();
     public static T4MVC.SharedController Shared = new T4MVC.SharedController();
 }
 
