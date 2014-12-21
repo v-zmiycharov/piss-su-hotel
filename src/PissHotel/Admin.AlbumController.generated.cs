@@ -169,7 +169,13 @@ namespace PissHotel.Areas.Admin.Controllers
             public _ViewNamesClass ViewNames { get { return s_ViewNames; } }
             public class _ViewNamesClass
             {
+                public readonly string Create = "Create";
+                public readonly string Edit = "Edit";
+                public readonly string List = "List";
             }
+            public readonly string Create = "~/Areas/Admin/Views/Album/Create.cshtml";
+            public readonly string Edit = "~/Areas/Admin/Views/Album/Edit.cshtml";
+            public readonly string List = "~/Areas/Admin/Views/Album/List.cshtml";
         }
     }
 
