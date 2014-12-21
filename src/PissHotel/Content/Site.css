@@ -36,3 +36,38 @@ textarea {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+#admin-wrapper {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+/* ========== VALIDATION ========== */
+.field-validation-error {
+    color: #e80c4d;
+    font-weight: bold;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error, textarea.input-validation-error {
+    border: 1px solid #e80c4d;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #e80c4d;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.validation-summary-valid {
+    display: none;
+}

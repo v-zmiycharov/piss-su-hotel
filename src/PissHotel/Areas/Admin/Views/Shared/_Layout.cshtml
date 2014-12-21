@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    @{
+        string action = ViewContext.RouteData.Values["action"].ToString();
+    }
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Хотел Борѝка", MVC.Home.ActionNames.Index, MVC.Home.Name, new { area = "" }, new { @class = "navbar-brand", target = "_blank" })
+            </div>
+            @if (Request.IsAuthenticated)
+            {
+                <div class="navbar-collapse collapse pull-right">
+                    <ul class="nav navbar-nav">
+                        <li class="@(action.Equals(MVC.Admin.Account.ActionNames.ChangePassword) ? "active" : "")">@Html.ActionLink("Смяна на парола", MVC.Admin.Account.ActionNames.ChangePassword, MVC.Admin.Account.Name, new { area = MVC.Admin.Name }, null)</li>
+                        <li>@Html.ActionLink("Изход", MVC.Admin.Account.ActionNames.LogOff, MVC.Admin.Account.Name, new { area = MVC.Admin.Name }, null)</li>
+                    </ul>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="container body-content">
+        <div id="admin-wrapper">
+            @RenderBody()
+        </div>
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Хотел Борѝка</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/js")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
