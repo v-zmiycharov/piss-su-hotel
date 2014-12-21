@@ -17,7 +17,7 @@ namespace PissHotel.Areas.Admin.Controllers
         {
             if (Request.IsAuthenticated)
             {
-                return RedirectToAction(ActionNames.ChangePassword, new { area = MVC.Admin.Name });
+                return RedirectToAction(MVC.Admin.Room.ActionNames.List, MVC.Admin.Room.Name, new { area = MVC.Admin.Name });
             }
             return View();
         }
@@ -28,7 +28,7 @@ namespace PissHotel.Areas.Admin.Controllers
         {
             if (ModelState.IsValid && WebSecurity.Login(model.UserName, model.Password, persistCookie: false))
             {
-                return RedirectToAction(ActionNames.ChangePassword, new { area = MVC.Admin.Name });
+                return RedirectToAction(MVC.Admin.Room.ActionNames.List, MVC.Admin.Room.Name, new { area = MVC.Admin.Name });
             }
 
             // If we got this far, something failed, redisplay form

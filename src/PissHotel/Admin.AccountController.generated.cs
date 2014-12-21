@@ -113,7 +113,11 @@ namespace PissHotel.Areas.Admin.Controllers
             public _ViewNamesClass ViewNames { get { return s_ViewNames; } }
             public class _ViewNamesClass
             {
+                public readonly string ChangePassword = "ChangePassword";
+                public readonly string Login = "Login";
             }
+            public readonly string ChangePassword = "~/Areas/Admin/Views/Account/ChangePassword.cshtml";
+            public readonly string Login = "~/Areas/Admin/Views/Account/Login.cshtml";
         }
     }
 

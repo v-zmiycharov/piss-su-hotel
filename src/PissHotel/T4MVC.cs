@@ -29,7 +29,6 @@ public static partial class MVC
     public static AdminClass Admin { get { return s_Admin; } }
     public static PissHotel.Controllers.BaseController Base = new PissHotel.Controllers.T4MVC_BaseController();
     public static PissHotel.Controllers.HomeController Home = new PissHotel.Controllers.T4MVC_HomeController();
-    public static T4MVC.ManageController Manage = new T4MVC.ManageController();
     public static T4MVC.SharedController Shared = new T4MVC.SharedController();
 }
 
@@ -41,6 +40,7 @@ namespace T4MVC
         public readonly string Name = "Admin";
         public PissHotel.Areas.Admin.Controllers.AccountController Account = new PissHotel.Areas.Admin.Controllers.T4MVC_AccountController();
         public PissHotel.Areas.Admin.Controllers.AdminBaseController AdminBase = new PissHotel.Areas.Admin.Controllers.T4MVC_AdminBaseController();
+        public PissHotel.Areas.Admin.Controllers.RoomController Room = new PissHotel.Areas.Admin.Controllers.T4MVC_RoomController();
         public T4MVC.Admin.SharedController Shared = new T4MVC.Admin.SharedController();
     }
 }
