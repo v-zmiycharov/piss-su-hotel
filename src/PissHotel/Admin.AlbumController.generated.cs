@@ -23,13 +23,13 @@ using System.Web.Routing;
 using T4MVC;
 namespace PissHotel.Areas.Admin.Controllers
 {
-    public partial class RoomController
+    public partial class AlbumController
     {
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public RoomController() { }
+        public AlbumController() { }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        protected RoomController(Dummy d) { }
+        protected AlbumController(Dummy d) { }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         protected RedirectToRouteResult RedirectToAction(ActionResult result)
@@ -83,13 +83,13 @@ namespace PissHotel.Areas.Admin.Controllers
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-        public RoomController Actions { get { return MVC.Admin.Room; } }
+        public AlbumController Actions { get { return MVC.Admin.Album; } }
         [GeneratedCode("T4MVC", "2.0")]
         public readonly string Area = "Admin";
         [GeneratedCode("T4MVC", "2.0")]
-        public readonly string Name = "Room";
+        public readonly string Name = "Album";
         [GeneratedCode("T4MVC", "2.0")]
-        public const string NameConst = "Room";
+        public const string NameConst = "Album";
 
         static readonly ActionNamesClass s_actions = new ActionNamesClass();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -148,7 +148,7 @@ namespace PissHotel.Areas.Admin.Controllers
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionParamsClass_DeleteFile
         {
-            public readonly string roomId = "roomId";
+            public readonly string albumId = "albumId";
             public readonly string fileName = "fileName";
         }
         static readonly ActionParamsClass_AddFile s_params_AddFile = new ActionParamsClass_AddFile();
@@ -157,7 +157,7 @@ namespace PissHotel.Areas.Admin.Controllers
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionParamsClass_AddFile
         {
-            public readonly string roomId = "roomId";
+            public readonly string albumId = "albumId";
         }
         static readonly ViewsClass s_views = new ViewsClass();
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
@@ -169,20 +169,14 @@ namespace PissHotel.Areas.Admin.Controllers
             public _ViewNamesClass ViewNames { get { return s_ViewNames; } }
             public class _ViewNamesClass
             {
-                public readonly string Create = "Create";
-                public readonly string Edit = "Edit";
-                public readonly string List = "List";
             }
-            public readonly string Create = "~/Areas/Admin/Views/Room/Create.cshtml";
-            public readonly string Edit = "~/Areas/Admin/Views/Room/Edit.cshtml";
-            public readonly string List = "~/Areas/Admin/Views/Room/List.cshtml";
         }
     }
 
     [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
-    public partial class T4MVC_RoomController : PissHotel.Areas.Admin.Controllers.RoomController
+    public partial class T4MVC_AlbumController : PissHotel.Areas.Admin.Controllers.AlbumController
     {
-        public T4MVC_RoomController() : base(Dummy.Instance) { }
+        public T4MVC_AlbumController() : base(Dummy.Instance) { }
 
         [NonAction]
         partial void ListOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
@@ -219,10 +213,10 @@ namespace PissHotel.Areas.Admin.Controllers
         }
 
         [NonAction]
-        partial void CreateOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, PissHotel.Areas.Admin.Models.RoomVM vm);
+        partial void CreateOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, PissHotel.Areas.Admin.Models.AlbumVM vm);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult Create(PissHotel.Areas.Admin.Models.RoomVM vm)
+        public override System.Web.Mvc.ActionResult Create(PissHotel.Areas.Admin.Models.AlbumVM vm)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Create);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "vm", vm);
@@ -243,10 +237,10 @@ namespace PissHotel.Areas.Admin.Controllers
         }
 
         [NonAction]
-        partial void EditOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, PissHotel.Areas.Admin.Models.RoomVM vm);
+        partial void EditOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, PissHotel.Areas.Admin.Models.AlbumVM vm);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult Edit(PissHotel.Areas.Admin.Models.RoomVM vm)
+        public override System.Web.Mvc.ActionResult Edit(PissHotel.Areas.Admin.Models.AlbumVM vm)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Edit);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "vm", vm);
@@ -255,27 +249,27 @@ namespace PissHotel.Areas.Admin.Controllers
         }
 
         [NonAction]
-        partial void DeleteFileOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int roomId, string fileName);
+        partial void DeleteFileOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int albumId, string fileName);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult DeleteFile(int roomId, string fileName)
+        public override System.Web.Mvc.ActionResult DeleteFile(int albumId, string fileName)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.DeleteFile);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "roomId", roomId);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "albumId", albumId);
             ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "fileName", fileName);
-            DeleteFileOverride(callInfo, roomId, fileName);
+            DeleteFileOverride(callInfo, albumId, fileName);
             return callInfo;
         }
 
         [NonAction]
-        partial void AddFileOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int roomId);
+        partial void AddFileOverride(T4MVC_System_Web_Mvc_ActionResult callInfo, int albumId);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult AddFile(int roomId)
+        public override System.Web.Mvc.ActionResult AddFile(int albumId)
         {
             var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.AddFile);
-            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "roomId", roomId);
-            AddFileOverride(callInfo, roomId);
+            ModelUnbinderHelpers.AddRouteValues(callInfo.RouteValueDictionary, "albumId", albumId);
+            AddFileOverride(callInfo, albumId);
             return callInfo;
         }
 

@@ -26,6 +26,7 @@
                 <div class="navbar-collapse collapse pull-right">
                     <ul class="nav navbar-nav">
                         <li class="@(controller.Equals(MVC.Admin.Room.Name) ? "active" : "")">@Html.ActionLink("Стаи", MVC.Admin.Room.ActionNames.List, MVC.Admin.Room.Name, new { area = MVC.Admin.Name }, null)</li>
+                        <li class="@(controller.Equals(MVC.Admin.Album.Name) ? "active" : "")">@Html.ActionLink("Галерия", MVC.Admin.Album.ActionNames.List, MVC.Admin.Album.Name, new { area = MVC.Admin.Name }, null)</li>
                         <li class="@(action.Equals(MVC.Admin.Account.ActionNames.ChangePassword) ? "active" : "")">@Html.ActionLink("Смяна на парола", MVC.Admin.Account.ActionNames.ChangePassword, MVC.Admin.Account.Name, new { area = MVC.Admin.Name }, null)</li>
                         <li>@Html.ActionLink("Изход", MVC.Admin.Account.ActionNames.LogOff, MVC.Admin.Account.Name, new { area = MVC.Admin.Name }, null)</li>
                     </ul>

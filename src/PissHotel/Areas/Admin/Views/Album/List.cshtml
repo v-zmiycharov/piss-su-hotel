@@ -1,0 +1,17 @@
+﻿@model List<PissHotel.Models.Album>
+           
+<div class="jumbotron">
+    @if (Model != null)
+    {
+        @Html.ActionLink("Добави нов албум", MVC.Admin.Album.ActionNames.Create, MVC.Admin.Album.Name, new { area = MVC.Admin.Name }, new { @class = "btn btn-default" })
+        foreach (var album in Model)
+        {
+            <h3>
+                @album.TitleBG 
+                @Html.ActionLink("Редакция", MVC.Admin.Album.ActionNames.Edit, MVC.Admin.Album.Name, new { area = MVC.Admin.Name, id = album.AlbumId }, null)
+                |                
+                @Html.ActionLink("Изтрий", MVC.Admin.Album.ActionNames.Delete, MVC.Admin.Album.Name, new { area = MVC.Admin.Name, id = album.AlbumId }, new { @class = "delete-link" })
+            </h3>
+        }
+    }
+</div>

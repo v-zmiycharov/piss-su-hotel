@@ -175,6 +175,9 @@
     <Compile Include="Admin.AdminBaseController.generated.cs">
       <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
+    <Compile Include="Admin.AlbumController.generated.cs">
+      <DependentUpon>T4MVC.tt</DependentUpon>
+    </Compile>
     <Compile Include="Admin.RoomController.generated.cs">
       <DependentUpon>T4MVC.tt</DependentUpon>
     </Compile>
@@ -187,8 +190,10 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminBaseController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AlbumController.cs" />
     <Compile Include="Areas\Admin\Controllers\RoomController.cs" />
     <Compile Include="Areas\Admin\Models\AccountModels.cs" />
+    <Compile Include="Areas\Admin\Models\AlbumVM.cs" />
     <Compile Include="Areas\Admin\Models\RoomVM.cs" />
     <Compile Include="BaseController.generated.cs">
       <DependentUpon>T4MVC.tt</DependentUpon>
@@ -317,6 +322,9 @@
     <Content Include="Areas\Admin\Views\Room\List.cshtml" />
     <Content Include="Areas\Admin\Views\Room\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Room\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Album\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Album\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Album\List.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
