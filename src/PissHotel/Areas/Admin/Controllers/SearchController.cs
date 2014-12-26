@@ -41,7 +41,6 @@ namespace PissHotel.Areas.Admin.Controllers
             request.AllowAutoRedirect = false;
             request.Accept = "application/json, text/plain, */*";
             request.ContentType = "application/application/json; charset=UTF-8";
-            //request.Headers.Add(HttpRequestHeader.Authorization, string.Format("Bearer {0}", accessToken));
 
             JObject jO;
 

@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 
@@ -60,6 +61,16 @@ namespace PissHotel.Areas.Admin.Controllers
 
             Directory.CreateDirectory(Server.MapPath(Constants.RoomsImagesDir + room.RoomId + "/"));
 
+            string url = string.Format(
+                    @"{0}
+                    ?id={1}
+                    &titleBg={2}
+                    &titleEn={3}
+                    &price={3}",
+                    "", room.RoomId, room.TitleBG, room.TitleEN, room.Price)
+                    .Replace(Environment.NewLine, "").Replace(" ", "");
+            MakeRequest(url);
+
             return RedirectToAction(ActionNames.List);
         }
 
@@ -102,6 +113,16 @@ namespace PissHotel.Areas.Admin.Controllers
 
             unitOfWork.RoomRepository.Update(room);
             unitOfWork.Save();
+
+            string url = string.Format(
+                    @"{0}
+                    ?id={1}
+                    &titleBg={2}
+                    &titleEn={3}
+                    &price={3}",
+                    "", room.RoomId, room.TitleBG, room.TitleEN, room.Price)
+                    .Replace(Environment.NewLine, "").Replace(" ", "");
+            MakeRequest(url);
 
             return RedirectToAction(ActionNames.List);
         }
@@ -151,5 +172,12 @@ namespace PissHotel.Areas.Admin.Controllers
         }
 
         #endregion
+
+        private void MakeRequest(string url)
+        {
+            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(url);
+            request.Method = "GET";
+            var response = request.GetResponse();
+        }
     }
 }
