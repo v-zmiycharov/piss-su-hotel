@@ -115,10 +115,10 @@ namespace PissHotel.Areas.Admin.Controllers
             unitOfWork.Save();
 
             string url = string.Format(
-                    @"{0}
-                    ?id={1}
-                    &titleBg={2}
-                    &titleEn={3}
+                    @"http://127.0.0.1:3000/rooms/update
+                    ?external_id={1}
+                    &name_bg={2}
+                    &name_en={3}
                     &price={3}",
                     "", room.RoomId, room.TitleBG, room.TitleEN, room.Price)
                     .Replace(Environment.NewLine, "").Replace(" ", "");
