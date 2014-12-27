@@ -1,0 +1,13 @@
+<table>
+
+  <% @rooms.each do |room| %>
+    <tr>
+      <td><%= room.external_id %></td>
+      <td><%= room.name_bg %></td>
+      <td><%= room.name_en %></td>
+      <td><%= room.price %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br>

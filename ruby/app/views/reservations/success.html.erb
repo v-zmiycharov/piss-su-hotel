@@ -1,0 +1,56 @@
+<p id="notice"><%= @notice %></p>
+
+<p>
+  <strong><%= t 'helpers.label.reservation.create_date' %>:</strong>
+  <%= @reservation.create_date %>
+</p>
+
+<p>
+  <strong><%= t 'helpers.label.reservation.checkin' %>:</strong>
+  <%= @reservation.checkin %>
+</p>
+
+<p>
+  <strong><%= t 'helpers.label.reservation.checkout' %>:</strong>
+  <%= @reservation.checkout %>
+</p>
+
+<p>
+  <strong><%= t 'helpers.label.reservation.client_names' %>:</strong>
+  <%= @reservation.client_names %>
+</p>
+
+<p>
+  <strong><%= t 'helpers.label.reservation.client_email' %>:</strong>
+  <%= @reservation.client_email %>
+</p>
+
+<p>
+  <strong><%= t 'helpers.label.reservation.client_phone' %>:</strong>
+  <%= @reservation.client_phone %>
+</p>
+
+<p>
+  <strong><%= t 'helpers.label.reservation.details' %>:</strong>
+  <%= @reservation.details %>
+</p>
+
+<p>
+  <strong><%= t 'helpers.label.reservation.clients_count' %>:</strong>
+  <%= @reservation.clients_count %>
+</p>
+
+<p>
+  <strong><%= t 'helpers.label.reservation.breakfast' %>:</strong>
+  <%= @reservation.breakfast %>
+</p>
+
+<p>
+  <strong><%= t 'helpers.label.reservation.payment_method' %>:</strong>
+  <%= t("reservation.payment_method.#{@reservation.payment_method}") %>
+</p>
+
+<p>
+  <strong><%= t 'helpers.label.reservation.status' %>:</strong>
+  <%= t("reservation.status.#{@reservation.status}") %>
+</p>

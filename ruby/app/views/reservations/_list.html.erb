@@ -1,0 +1,42 @@
+<table>
+  <thead>
+    <tr>
+      <th><%= t 'helpers.label.reservation.create_date' %></th>
+      <th><%= t 'helpers.label.reservation.checkin' %></th>
+      <th><%= t 'helpers.label.reservation.checkout' %></th>
+      <th><%= t 'helpers.label.reservation.client_names' %></th>
+      <th><%= t 'helpers.label.reservation.client_email' %></th>
+      <th><%= t 'helpers.label.reservation.client_phone' %></th>
+      <th><%= t 'helpers.label.reservation.details' %></th>
+      <th><%= t 'helpers.label.reservation.clients_count' %></th>
+      <th><%= t 'helpers.label.reservation.breakfast' %></th>
+      <% if @history %>
+        <th><%= t 'helpers.label.reservation.status' %></th>
+      <% end %>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reservations.each do |reservation| %>
+      <tr>
+        <td><%= reservation.create_date %></td>
+        <td><%= reservation.checkin %></td>
+        <td><%= reservation.checkout %></td>
+        <td><%= reservation.client_names %></td>
+        <td><%= reservation.client_email %></td>
+        <td><%= reservation.client_phone %></td>
+        <td><%= reservation.details %></td>
+        <td><%= reservation.clients_count %></td>
+        <td><%= reservation.breakfast %></td>
+        <% if @history %>
+          <td><%= t :"reservation.status.#{reservation.status}" %></td>
+        <% end %>
+        <td><%= link_to t('reservation.actions.show'), reservation %></td>
+        <td><%= link_to t('reservation.actions.edit'), edit_reservation_path(reservation) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
