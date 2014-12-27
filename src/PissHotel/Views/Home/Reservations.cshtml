@@ -1,8 +1,14 @@
 ﻿@{
     ViewBag.Title = Global.Reservations;
+
+    string url = "http://127.0.0.1:3000/reservations/new";
+    if(PissHotel.Localization.SystemLocalization.GetCurrentLanguage() == PissHotel.Localization.LocalizationLanguage.en)
+    {
+        url += "?locale=en";
+    }
 }
 
 
-<div class="text-center">
-    <iframe width="681" height="381" src="https://www.youtube.com/embed/fJ90kQkqvyU" frameborder="0" allowfullscreen=""></iframe>
+<div class="text-center" style="margin-top:20px;">
+    <iframe width="681" height="381" src="@url" frameborder="0" allowfullscreen=""></iframe>
 </div>
