@@ -70,9 +70,9 @@ namespace PissHotel.Areas.Admin.Models
 
     public class SearchResult
     {
-        public string Name { get; set; }
-        public string Location { get; set; }
-        public string Stars { get; set; }
-        public string Price { get; set; }
+        public string name { get; set; }
+        public string location { get; set; }
+        public string stars { get; set; }
+        public string price { get; set; }
     }
 }

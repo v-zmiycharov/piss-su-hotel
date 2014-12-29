@@ -24,9 +24,10 @@ namespace PissHotel.Areas.Admin.Controllers
             string url = string.Format(
                     @"{0}
                     ?location={1}
-                    &stars={2}
+                    &starsNum={2}
                     &order={3}",
-                    "", vm.Location, vm.Stars, vm.Order)
+                    "http://localhost:8080/hotel-search-0/api/hotels/search"
+                    , vm.Location, vm.Stars, vm.Order)
                     .Replace(Environment.NewLine, "").Replace(" ", "");
 
             vm.Results = MakeRequest(url).ToObject<List<SearchResult>>();
