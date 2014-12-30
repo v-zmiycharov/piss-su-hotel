@@ -29,6 +29,13 @@ namespace PissHotel.Areas.Admin.Controllers
                 Directory.Delete(Server.MapPath(Constants.RoomsImagesDir + room.RoomId + "/"), true);
                 unitOfWork.RoomRepository.Delete(room);
                 unitOfWork.Save();
+
+                string url = string.Format(
+                    @"{0}
+                    ?external_id={1}",
+                    "http://127.0.0.1:3000/rooms/delete", room.RoomId)
+                    .Replace(Environment.NewLine, "").Replace(" ", "");
+                MakeRequest(url);
             }
 
             return RedirectToAction(ActionNames.List);
@@ -62,12 +69,12 @@ namespace PissHotel.Areas.Admin.Controllers
             Directory.CreateDirectory(Server.MapPath(Constants.RoomsImagesDir + room.RoomId + "/"));
 
             string url = string.Format(
-                    @"http://127.0.0.1:3000/rooms/update
+                    @"{0}
                     ?external_id={1}
                     &name_bg={2}
                     &name_en={3}
                     &price={3}",
-                    "", room.RoomId, room.TitleBG, room.TitleEN, room.Price)
+                    "http://127.0.0.1:3000/rooms/update", room.RoomId, room.TitleBG, room.TitleEN, room.Price)
                     .Replace(Environment.NewLine, "").Replace(" ", "");
             MakeRequest(url);
 
@@ -115,12 +122,12 @@ namespace PissHotel.Areas.Admin.Controllers
             unitOfWork.Save();
 
             string url = string.Format(
-                    @"http://127.0.0.1:3000/rooms/update
+                    @"{0}
                     ?external_id={1}
                     &name_bg={2}
                     &name_en={3}
                     &price={3}",
-                    "", room.RoomId, room.TitleBG, room.TitleEN, room.Price)
+                    "http://127.0.0.1:3000/rooms/update", room.RoomId, room.TitleBG, room.TitleEN, room.Price)
                     .Replace(Environment.NewLine, "").Replace(" ", "");
             MakeRequest(url);
 
