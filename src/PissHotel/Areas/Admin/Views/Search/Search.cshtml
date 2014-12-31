@@ -5,19 +5,19 @@
     <div class="form-group">
         <label class="col-md-4 control-label">@Html.LabelFor(m => m.Location)</label>
         <div class="col-md-8">
-            @Html.DropDownListFor(m => m.Location, Model.LocationItems, new { @class = "form-control" })
+            @Html.DropDownListFor(m => m.Location, Model.LocationItems, "..", new { @class = "form-control" })
         </div>
     </div>
     <div class="form-group">
         <label class="col-md-4 control-label">@Html.LabelFor(m => m.Stars)</label>
         <div class="col-md-2">
-            @Html.DropDownListFor(m => m.Stars, Model.StarsItems, new { @class = "form-control" })
+            @Html.DropDownListFor(m => m.Stars, Model.StarsItems, "..", new { @class = "form-control" })
         </div>
     </div>
     <div class="form-group">
         <label class="col-md-4 control-label">@Html.LabelFor(m => m.Order)</label>
         <div class="col-md-8">
-            @Html.DropDownListFor(m => m.Order, Model.OrderItems, new { @class = "form-control" })
+            @Html.DropDownListFor(m => m.Order, Model.OrderItems, "..", new { @class = "form-control" })
         </div>
     </div>
     <div class="form-group">

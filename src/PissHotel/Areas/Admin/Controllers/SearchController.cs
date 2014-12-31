@@ -24,9 +24,9 @@ namespace PissHotel.Areas.Admin.Controllers
             string url = string.Format(
                     @"{0}
                     ?location={1}
-                    &starsNum={2}
+                    &stars={2}
                     &order={3}",
-                    "http://localhost:8080/hotel-search-0/api/hotels/search"
+                    "http://localhost:8080/hotel-search/api/hotels/search"
                     , vm.Location, vm.Stars, vm.Order)
                     .Replace(Environment.NewLine, "").Replace(" ", "");
 
@@ -35,22 +35,21 @@ namespace PissHotel.Areas.Admin.Controllers
             return View(vm);
         }
 
-        private JObject MakeRequest(string url)
+        private JArray MakeRequest(string url)
         {
             HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(url);
             request.Method = "GET";
-            request.AllowAutoRedirect = false;
             request.Accept = "application/json, text/plain, */*";
-            request.ContentType = "application/application/json; charset=UTF-8";
+            request.ContentType = "application/json; charset=UTF-8";
 
-            JObject jO;
+            JArray jO;
 
             using (var response = request.GetResponse())
             using (var responseStream = response.GetResponseStream())
             using (var reader = new StreamReader(responseStream))
             {
                 var responseFromServer = reader.ReadToEnd();
-                jO = JsonConvert.DeserializeObject<JObject>(responseFromServer);
+                jO = JsonConvert.DeserializeObject<JArray>(responseFromServer);
             }
 
             return jO;
