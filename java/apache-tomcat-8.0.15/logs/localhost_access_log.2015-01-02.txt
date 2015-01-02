@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [02/Jan/2015:15:17:27 +0200] "GET /hotel-search/api/hotels/search?location=&stars=&order= HTTP/1.1" 200 2379
+0:0:0:0:0:0:0:1 - - [02/Jan/2015:15:17:33 +0200] "GET /hotel-search/api/hotels/search?location=&stars=&order=1 HTTP/1.1" 200 2379
+0:0:0:0:0:0:0:1 - - [02/Jan/2015:15:17:41 +0200] "GET /hotel-search/api/hotels/search?location=&stars=&order=3 HTTP/1.1" 200 2379
+0:0:0:0:0:0:0:1 - - [02/Jan/2015:15:17:46 +0200] "GET /hotel-search/api/hotels/search?location=&stars=&order=2 HTTP/1.1" 200 2379
+0:0:0:0:0:0:0:1 - - [02/Jan/2015:15:17:55 +0200] "GET /hotel-search/api/hotels/search?location=&stars=3&order=2 HTTP/1.1" 200 644
+0:0:0:0:0:0:0:1 - - [02/Jan/2015:15:18:01 +0200] "GET /hotel-search/api/hotels/search?location=1&stars=3&order=2 HTTP/1.1" 200 76
+0:0:0:0:0:0:0:1 - - [02/Jan/2015:15:18:21 +0200] "GET /hotel-search/api/hotels/search?location=6&stars=3&order=2 HTTP/1.1" 200 2
+0:0:0:0:0:0:0:1 - - [02/Jan/2015:15:18:24 +0200] "GET /hotel-search/api/hotels/search?location=6&stars=&order= HTTP/1.1" 200 254
+0:0:0:0:0:0:0:1 - - [02/Jan/2015:15:18:37 +0200] "GET /hotel-search/api/hotels/search?location=6&stars=&order=1 HTTP/1.1" 200 254
+0:0:0:0:0:0:0:1 - - [02/Jan/2015:15:18:40 +0200] "GET /hotel-search/api/hotels/search?location=6&stars=&order=2 HTTP/1.1" 200 254
