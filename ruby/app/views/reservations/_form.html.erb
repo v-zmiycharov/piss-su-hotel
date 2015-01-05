@@ -1,3 +1,17 @@
+<style type="text/css">
+  form.edit_reservation {
+    width: 800px;
+  }
+  div.field {
+    width: 400px;
+    height: 40px;
+  }
+  div.field_container {
+    float: left;
+    width: 400px;
+  }
+</style>
+
 <%= form_for(@reservation) do |f| %>
   <% if @reservation.errors.any? %>
     <div id="error_explanation">
@@ -10,43 +24,50 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :checkin %><br>
-    <%= f.date_select :checkin %>
+  <div class="field_container left">
+    <div class="field">
+      <%= f.label :checkin %><br>
+      <%= f.date_select :checkin %>
+    </div>
+    <div class="field">
+      <%= f.label :checkout %><br>
+      <%= f.date_select :checkout %>
+    </div>
+    <div class="field">
+      <%= f.label :details %><br>
+      <%= f.text_field :details %>
+    </div>
+    <div class="field">
+      <%= f.label :room_type %><br>
+      <%= f.select :room_id, options_for_select(Room.all.collect { |r| [r.send(:"name_#{I18n.locale}").to_s + " (#{r.price} BGN)", r.id] }, selected: @reservation.room_id) %>
+    </div>
+    <div class="field">
+      <%= f.label :breakfast %><br>
+      <%= f.check_box :breakfast %>
+    </div>  
   </div>
-  <div class="field">
-    <%= f.label :checkout %><br>
-    <%= f.date_select :checkout %>
-  </div>
-  <div class="field">
-    <%= f.label :client_names %><br>
-    <%= f.text_field :client_names %>
-  </div>
-  <div class="field">
-    <%= f.label :client_email %><br>
-    <%= f.text_field :client_email %>
-  </div>
-  <div class="field">
-    <%= f.label :client_phone %><br>
-    <%= f.text_field :client_phone %>
-  </div>
-  <div class="field">
-    <%= f.label :details %><br>
-    <%= f.text_field :details %>
-  </div>
-  <div class="field">
-    <%= f.label :clients_count %><br>
-    <%= f.number_field :clients_count %>
-  </div>
-  <div class="field">
-    <%= f.label :breakfast %><br>
-    <%= f.check_box :breakfast %>
-  </div>
-  <div class="field">
-    <%= f.label :payment_method %><br>
-    <%= f.select :payment_method, options_for_select(Reservation.payment_methods.collect { |s| [t("reservation.payment_method.#{s[0]}"), s[0]] }, selected: @reservation.payment_method), {} %>
-  </div>
+  <div class="field_container right">
+    <div class="field">
+      <%= f.label :client_names %><br>
+      <%= f.text_field :client_names %>
+    </div>
+    <div class="field">
+      <%= f.label :client_email %><br>
+      <%= f.text_field :client_email %>
+    </div>
+    <div class="field">
+      <%= f.label :client_phone %><br>
+      <%= f.text_field :client_phone %>
+    </div>
+    <div class="field">
+      <%= f.label :clients_count %><br>
+      <%= f.number_field :clients_count %>
+    </div>
+    <div class="field">
+      <%= f.label :payment_method %><br>
+      <%= f.select :payment_method, options_for_select(Reservation.payment_methods.collect { |s| [t("reservation.payment_method.#{s[0]}"), s[0]] }, selected: @reservation.payment_method), {} %>
+    </div>
+  </div>  
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -40,6 +40,12 @@
   <%= @reservation.clients_count %>
 </p>
 
+
+<p>
+  <strong><%= t 'helpers.label.reservation.room_type' %>:</strong>
+  <%= @reservation.room ? @reservation.room.send(:"name_#{I18n.locale}").to_s + " (#{@reservation.room.price} BGN)" : "" %>
+</p>
+
 <p>
   <strong><%= t 'helpers.label.reservation.breakfast' %>:</strong>
   <%= @reservation.breakfast %>
@@ -55,5 +61,9 @@
   <%= t("reservation.status.#{@reservation.status}") %>
 </p>
 
+<strong><%= t 'reservation.actions.actions' %>:</strong>
+<%= link_to t('reservation.actions.confirm'), confirm_url(@reservation) %>
+<%= link_to t('reservation.actions.cancel'), cancel_url(@reservation) %>
+<br />
 <%= if @reservation.status == 'new' then link_to t('reservation.actions.edit'), edit_reservation_path(@reservation) end %>
 <%= @reservation.status == 'new' ? link_to(t('reservation.actions.back'), reservations_path) : link_to(t('reservation.actions.back'), history_url) %>

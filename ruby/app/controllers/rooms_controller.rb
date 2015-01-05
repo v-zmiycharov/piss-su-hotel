@@ -8,7 +8,7 @@ class RoomsController < ApplicationController
 
   # GET /rooms/update
   def update
-    @room = Room.where(external_id: room_params[:external_id]).distinct  
+    @room = Room.where(external_id: room_params[:external_id]).distinct
     if @room.empty?
       @room = Room.new(room_params)
       @room.external_id = room_params[:external_id]
@@ -26,6 +26,24 @@ class RoomsController < ApplicationController
       else
         format.html { redirect_to "/rooms", notice: "Not saved."}
         format.json { render json: @room.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # GET /rooms/delete?external_id=?
+  def delete
+    @room = Room.where(external_id: room_params[:external_id]).distinct
+    if @room.empty?
+      respond_to do |format|
+        format.html { redirect_to "/rooms", notice: "Not existing room with such external_id."}
+        format.json { render json: @room.errors, status: :unprocessable_entity }
+      end
+    else
+      @room = @room[0]
+      @room.destroy
+      respond_to do |format|
+        format.html { redirect_to "/rooms" }
+        format.json { head :no_content }
       end
     end
   end

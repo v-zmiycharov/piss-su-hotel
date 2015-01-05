@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141226180403) do
+ActiveRecord::Schema.define(version: 20141227091518) do
 
   create_table "reservations", force: true do |t|
     t.date     "checkin"
@@ -27,7 +27,10 @@ ActiveRecord::Schema.define(version: 20141226180403) do
     t.string   "status"
     t.datetime "create_date"
     t.integer  "payment_method"
+    t.integer  "room_id"
   end
+
+  add_index "reservations", ["room_id"], name: "index_reservations_on_room_id"
 
   create_table "rooms", force: true do |t|
     t.integer  "external_id"

@@ -7,9 +7,6 @@
       <th><%= t 'helpers.label.reservation.client_names' %></th>
       <th><%= t 'helpers.label.reservation.client_email' %></th>
       <th><%= t 'helpers.label.reservation.client_phone' %></th>
-      <th><%= t 'helpers.label.reservation.details' %></th>
-      <th><%= t 'helpers.label.reservation.clients_count' %></th>
-      <th><%= t 'helpers.label.reservation.breakfast' %></th>
       <% if @history %>
         <th><%= t 'helpers.label.reservation.status' %></th>
       <% end %>
@@ -26,9 +23,6 @@
         <td><%= reservation.client_names %></td>
         <td><%= reservation.client_email %></td>
         <td><%= reservation.client_phone %></td>
-        <td><%= reservation.details %></td>
-        <td><%= reservation.clients_count %></td>
-        <td><%= reservation.breakfast %></td>
         <% if @history %>
           <td><%= t :"reservation.status.#{reservation.status}" %></td>
         <% end %>

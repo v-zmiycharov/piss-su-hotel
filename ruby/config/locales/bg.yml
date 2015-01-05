@@ -35,6 +35,11 @@ bg:
         breakfast: "Закуска"
         payment_method: "Метод на плащане"
         status: "Статус"
+        room_type: "Тип стая"
+    submit:
+      reservation:
+        create: "Резервирай"
+        update: "Запази"
   reservation:
     payment_method:
       bank: "Банков превод"
