@@ -8,6 +8,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using PissHotel.Helpers;
 
 namespace PissHotel.Areas.Admin.Controllers
 {
@@ -28,7 +29,7 @@ namespace PissHotel.Areas.Admin.Controllers
                     &order={3}",
                     "http://localhost:8080/hotel-search/api/hotels/search"
                     , vm.Location, vm.Stars, vm.Order)
-                    .Replace(Environment.NewLine, "").Replace(" ", "");
+                    .RemoveWhiteSpaces();
 
             vm.Results = MakeRequest(url).ToObject<List<SearchResult>>();
 

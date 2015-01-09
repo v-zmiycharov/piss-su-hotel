@@ -34,7 +34,7 @@ namespace PissHotel.Areas.Admin.Controllers
                     @"{0}
                     ?external_id={1}",
                     "http://127.0.0.1:3000/rooms/delete", room.RoomId)
-                    .Replace(Environment.NewLine, "").Replace(" ", "");
+                    .RemoveWhiteSpaces();
                 MakeRequest(url);
             }
 
@@ -75,7 +75,7 @@ namespace PissHotel.Areas.Admin.Controllers
                     &name_en={3}
                     &price={4}",
                     "http://127.0.0.1:3000/rooms/update", room.RoomId, room.TitleBG, room.TitleEN, room.Price)
-                    .Replace(Environment.NewLine, "").Replace(" ", "");
+                    .RemoveWhiteSpaces();
             MakeRequest(url);
 
             return RedirectToAction(ActionNames.List);
@@ -128,7 +128,7 @@ namespace PissHotel.Areas.Admin.Controllers
                     &name_en={3}
                     &price={4}",
                     "http://127.0.0.1:3000/rooms/update", room.RoomId, room.TitleBG, room.TitleEN, room.Price)
-                    .Replace(Environment.NewLine, "").Replace(" ", "");
+                    .RemoveWhiteSpaces();
             MakeRequest(url);
 
             return RedirectToAction(ActionNames.List);

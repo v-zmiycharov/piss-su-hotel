@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [10/Jan/2015:01:13:53 +0200] "GET /hotel-search/api/hotels/search?location=1&stars=&order= HTTP/1.1" 200 297
+0:0:0:0:0:0:0:1 - - [10/Jan/2015:01:13:58 +0200] "GET /hotel-search/api/hotels/search?location=1&stars=3&order=3 HTTP/1.1" 200 76
+0:0:0:0:0:0:0:1 - - [10/Jan/2015:01:14:02 +0200] "GET /hotel-search/api/hotels/search?location=1&stars=&order=3 HTTP/1.1" 200 297
+0:0:0:0:0:0:0:1 - - [10/Jan/2015:01:14:05 +0200] "GET /hotel-search/api/hotels/search?location=&stars=&order=3 HTTP/1.1" 200 2379
+0:0:0:0:0:0:0:1 - - [10/Jan/2015:01:14:07 +0200] "GET /hotel-search/api/hotels/search?location=&stars=&order= HTTP/1.1" 200 2379
